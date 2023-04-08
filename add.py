@@ -8,14 +8,14 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 def load_json():
-    with open('../response.json') as json_obj:
+    with open('/Users/sukritimacker/DG Assignment_1/dataGlacier-Assignments/response.json') as json_obj:
         response = json.load(json_obj)
     return response
 
 
 response = load_json()
 
-def write_json(data,filename = '../response.json'):
+def write_json(data,filename = '/Users/sukritimacker/DG Assignment_1/dataGlacier-Assignments/response.json'):
     with open(filename,'w') as file:
         json.dump(data,file,indent=0)
 
